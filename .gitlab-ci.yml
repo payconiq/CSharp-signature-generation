@@ -8,4 +8,5 @@ job1:
     - git push -u origin master
   only:
     - master
-
+  tags:
+    - simple
