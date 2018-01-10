@@ -1,0 +1,11 @@
+stages:
+  - remote
+
+job1:
+  stage: remote
+  script:
+    - git remote add origin https://$username:$password@github.com/payconiq/CSharp-signature-generation.git
+    - git push -u origin master
+  only:
+    - master
+
