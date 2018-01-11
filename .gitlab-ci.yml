@@ -1,6 +1,8 @@
 stages:
   - remote
 
+image: registry.acc.payconiq.io/debian-payconiq:0.0.14
+
 job1:
   stage: remote
   script:
@@ -9,4 +11,4 @@ job1:
   only:
     - master
   tags:
-    - simple
+    - docker
